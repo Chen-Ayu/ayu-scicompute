@@ -1,0 +1,11 @@
+{
+  "name": "water",
+  "xyz": "water.xyz",
+  "charge": 0,
+  "multiplicity": 1,
+  "task": "frontier-esp",
+  "preset": "pbe0-def2-svp",
+  "method": {},
+  "resources": {"threads": 1, "memory_mb": 2000},
+  "cube": {"properties": ["density", "mep", "homo", "lumo"], "resolution_bohr": 0.35, "margin_bohr": 3.0}
+}

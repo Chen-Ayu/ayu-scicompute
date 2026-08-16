@@ -1,0 +1,4 @@
+interface:
+  display_name: "PySCF Runner"
+  short_description: "Run open-source molecular quantum chemistry"
+  default_prompt: "Use $pyscf-runner to prepare, run, validate, and deliver this molecular calculation."

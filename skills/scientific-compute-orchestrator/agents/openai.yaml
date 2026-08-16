@@ -1,0 +1,4 @@
+interface:
+  display_name: "AyuSciCompute Orchestrator"
+  short_description: "Route and validate molecular and materials simulations"
+  default_prompt: "Use $scientific-compute-orchestrator to plan, route, execute through real engines, validate, and deliver this theoretical-computation task without fabricating results."

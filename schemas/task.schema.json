@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:gel-biomass-compute:task:1.0",
+  "title": "Gel and biomass computation task contract",
+  "type": "object",
+  "required": ["schema_version", "project_name", "request", "task_type", "engine", "status", "structures", "chemistry", "deliverables", "unresolved"],
+  "properties": {
+    "schema_version": {"enum": ["1.0", "2.0"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "project_name": {"type": "string", "minLength": 1},
+    "request": {"type": "string", "minLength": 1},
+    "task_type": {
+      "enum": ["single-point", "geometry-opt", "frequency", "homo-lumo", "esp", "binding-energy", "conformer-search", "amorphous-cell", "md", "rdf", "msd", "hbond", "density", "radius-of-gyration", "free-volume", "periodic-relax", "band-structure", "dos", "phonon", "elastic", "surface", "adsorption", "defect", "neb", "magnetic-order"]
+    },
+    "engine": {"enum": ["pyscf", "orca", "materials-studio", "gaussian", "vasp", "prepared-only"]},
+    "platform": {"type": "string"},
+    "domain": {"enum": ["auto", "molecular", "metal-cluster", "periodic-material", "polymer-md", "gel-biomass"]},
+    "periodic": {"type": "boolean"},
+    "adapter_maturity": {"enum": ["validated", "implemented", "scaffolded", "planned", "prepared-only"]},
+    "alternative_engines": {"type": "array", "items": {"type": "string"}},
+    "route_rationale": {"type": "string"},
+    "status": {"enum": ["planned", "prepared", "running", "completed", "incomplete", "failed"]},
+    "structures": {"type": "array", "items": {"type": "object", "required": ["path", "role"]}},
+    "chemistry": {
+      "type": "object",
+      "required": ["charge", "multiplicity", "solvent"],
+      "properties": {
+        "charge": {"type": ["integer", "null"]},
+        "multiplicity": {"type": ["integer", "null"], "minimum": 1},
+        "solvent": {"type": ["string", "null"]}
+      }
+    },
+    "method": {"type": "object"},
+    "controls": {"type": "array"},
+    "acceptance_criteria": {"type": "array"},
+    "boundary_conditions": {"type": "object"},
+    "deliverables": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "unresolved": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

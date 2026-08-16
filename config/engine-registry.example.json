@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "default_policy": "prefer-open",
+  "engines": {
+    "pyscf": {
+      "adapter_maturity": "implemented",
+      "license_class": "open-source",
+      "distribution": "dependency installed separately",
+      "python": null
+    },
+    "orca": {
+      "adapter_maturity": "validated",
+      "license_class": "external-user-licensed",
+      "distribution": "never bundled",
+      "executable": null
+    },
+    "materials-studio": {
+      "adapter_maturity": "validated",
+      "license_class": "external-proprietary-user-licensed",
+      "distribution": "never bundled",
+      "runner": null,
+      "gateway_host": "localhost",
+      "gateway_port": 18888
+    },
+    "gaussian": {
+      "adapter_maturity": "planned",
+      "license_class": "external-user-licensed",
+      "distribution": "never bundled",
+      "executable": null
+    },
+    "vasp": {
+      "adapter_maturity": "planned",
+      "license_class": "external-user-licensed",
+      "distribution": "never bundled; pseudopotentials never bundled",
+      "executable": null
+    }
+  }
+}

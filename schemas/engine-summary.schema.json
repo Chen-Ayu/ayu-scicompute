@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:gel-biomass-compute:engine-summary:1.0",
+  "title": "Evidence-gated engine summary",
+  "type": "object",
+  "required": ["engine", "status"],
+  "properties": {
+    "engine": {"enum": ["pyscf", "orca", "materials-studio"]},
+    "status": {"enum": ["running", "completed", "incomplete-or-failed", "failed"]},
+    "normal_termination": {"type": "boolean"},
+    "marker_found": {"type": "boolean"},
+    "scientific_gate_passed": {"type": "boolean"},
+    "quality_notes": {"type": "array", "items": {"type": "string"}},
+    "final_single_point_energy_hartree": {"type": ["number", "null"]},
+    "homo_ev": {"type": ["number", "null"]},
+    "lumo_ev": {"type": ["number", "null"]},
+    "gap_ev": {"type": ["number", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "completed"}}},
+      "then": {"properties": {"scientific_gate_passed": {"const": true}}, "required": ["scientific_gate_passed"]}
+    }
+  ],
+  "additionalProperties": true
+}

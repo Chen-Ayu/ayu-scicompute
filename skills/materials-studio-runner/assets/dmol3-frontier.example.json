@@ -1,0 +1,22 @@
+{
+  "task_type": "dmol3-frontier",
+  "inputs": [
+    {
+      "name": "sample",
+      "file": "sample.xsd",
+      "charge": 0,
+      "multiplicity": 1
+    }
+  ],
+  "method": {
+    "quality": "Medium",
+    "functional": "PBE",
+    "basis_file": "4.4",
+    "core_treatment": "All Electron",
+    "dispersion": true,
+    "geometry_opt": false,
+    "calculate_potential": true,
+    "solvent": null,
+    "max_scf_cycles": 220
+  }
+}

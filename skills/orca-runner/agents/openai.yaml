@@ -1,0 +1,4 @@
+interface:
+  display_name: "ORCA Runner"
+  short_description: "Run traceable molecular quantum chemistry"
+  default_prompt: "Use $orca-runner to prepare, run, monitor, validate, and deliver this ORCA calculation."

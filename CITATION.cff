@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "AyuSciCompute: Evidence-Gated Multi-Engine Agent for Molecular and Materials Simulation"
+message: "Cite this repository and every numerical engine, method, and dependency used in the calculation."
+type: software
+version: 0.3.0-rc1
+date-released: 2026-08-16
+authors:
+  - family-names: "Chen"
+    given-names: "Zeyu"
+    affiliation: "杭州阿遇智能科技有限公司"
+repository-code: "https://github.com/Chen-Ayu/ayu-scicompute"
+license: MIT

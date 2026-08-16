@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "cases": [
+    {"id": "route-frontier-open", "kind": "route", "task_type": "homo-lumo", "expected_engine": "pyscf", "expected_maturity": "implemented"},
+    {"id": "route-esp-open", "kind": "route", "task_type": "esp", "expected_engine": "pyscf", "expected_maturity": "implemented"},
+    {"id": "route-polymer-md", "kind": "route", "task_type": "md", "expected_engine": "materials-studio", "expected_maturity": "validated"},
+    {"id": "route-free-volume", "kind": "route", "task_type": "free-volume", "expected_engine": "materials-studio", "expected_maturity": "validated"},
+    {"id": "route-metal-band-roadmap", "kind": "route", "task_type": "band-structure", "expected_engine": "prepared-only", "expected_maturity": "planned"},
+    {"id": "route-defect-roadmap", "kind": "route", "task_type": "defect", "expected_engine": "prepared-only", "expected_maturity": "planned"},
+    {"id": "reject-normal-unconverged-opt", "kind": "orca-output", "text": "! PBE0 Opt TightSCF\nFINAL SINGLE POINT ENERGY -75.0\nORCA TERMINATED NORMALLY\n", "expected_status": "incomplete-or-failed"},
+    {"id": "accept-converged-opt", "kind": "orca-output", "text": "! PBE0 Opt TightSCF\nTHE OPTIMIZATION HAS CONVERGED\nFINAL SINGLE POINT ENERGY -75.0\nORCA TERMINATED NORMALLY\n", "expected_status": "completed"},
+    {"id": "reject-missing-frequency", "kind": "orca-output", "text": "! PBE0 Freq TightSCF\nFINAL SINGLE POINT ENERGY -75.0\nORCA TERMINATED NORMALLY\n", "expected_status": "incomplete-or-failed"}
+  ]
+}

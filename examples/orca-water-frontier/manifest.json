@@ -1,0 +1,11 @@
+{
+  "name": "water",
+  "xyz": "water.xyz",
+  "charge": 0,
+  "multiplicity": 1,
+  "preset": "frontier-esp",
+  "nprocs": 1,
+  "maxcore_mb_per_core": 1000,
+  "solvent": null,
+  "extra_keywords": []
+}

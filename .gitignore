@@ -1,0 +1,60 @@
+# Local configuration and credentials
+.env
+.env.*
+*.key
+*.pem
+local-config.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Quantum-chemistry raw/runtime files
+*.gbw
+*.hess
+*.densities
+*.tmp
+*.prop
+*.engrad
+*.opt
+*.trj
+*.xtd
+*.xcd
+*.arc
+*.bak
+orca_job_state.json
+pyscf_job_state.json
+pyscf_launch_state.json
+pyscf_summary.json
+ms_job_state.json
+ms_summary.json
+*.chk
+*.cube
+*.stdout.log
+*.stderr.log
+
+# VASP/Gaussian licensed or large runtime artifacts
+POTCAR*
+WAVECAR
+CHGCAR
+OUTCAR
+vasprun.xml
+*.fchk
+*.rwf
+
+# Large or generated outputs
+03_runs/
+04_logs/
+05_analysis/
+06_figures/
+07_delivery/
+*.zip
+*.7z
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

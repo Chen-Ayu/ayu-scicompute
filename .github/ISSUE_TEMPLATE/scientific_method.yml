@@ -1,0 +1,16 @@
+name: Scientific method question
+description: Discuss method selection or quality gates without confidential data
+title: "[Method]: "
+body:
+  - type: textarea
+    attributes:
+      label: Scientific system and observable
+      description: State the model boundary, charge, multiplicity, solvent, and requested observable using publishable information only.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed method and validation
+      description: Explain the proposed engine/method and how it will be validated.
+    validations:
+      required: true

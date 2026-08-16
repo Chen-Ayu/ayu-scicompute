@@ -1,0 +1,11 @@
+{
+  "name": "sample",
+  "xyz": "sample.xyz",
+  "charge": 0,
+  "multiplicity": 1,
+  "preset": "frontier-esp",
+  "nprocs": 4,
+  "maxcore_mb_per_core": 2000,
+  "solvent": null,
+  "extra_keywords": []
+}

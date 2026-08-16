@@ -1,0 +1,4 @@
+interface:
+  display_name: "Materials Studio Runner"
+  short_description: "Operate user-licensed materials simulations"
+  default_prompt: "Use $materials-studio-runner to prepare, run, monitor, validate, and deliver this authorized Materials Studio calculation."

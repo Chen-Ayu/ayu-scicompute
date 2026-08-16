@@ -1,0 +1,15 @@
+name: Bug report
+description: Report a reproducible workflow or parser defect
+title: "[Bug]: "
+body:
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: Provide sanitized commands, versions, state JSON, and relevant log markers. Do not upload credentials or licensed software.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
