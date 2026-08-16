@@ -8,11 +8,12 @@ jobs:
   repository-and-pyscf:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: pip
+          cache-dependency-path: requirements-pyscf.txt
       - run: python -m pip install --upgrade pip
       - run: python -m pip install -r requirements-pyscf.txt
       - run: python tools/validate_repository.py
