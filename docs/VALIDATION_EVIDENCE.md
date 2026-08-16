@@ -26,4 +26,4 @@ Development history includes lignin/lignosulfonate conformer and frontier-orbita
 
 ## PySCF status
 
-The open PySCF backend has a Linux CI integration test covering SCF, frontier orbitals, Mulliken charges, density cube, MEP cube, and HOMO/LUMO cubes. The first remote CI result remains a release gate. Native Windows installation on the development machine failed cleanly because no wheel/compiler toolchain was available; the preflight reports that limitation instead of claiming execution.
+The open PySCF backend has passed its GitHub-hosted Linux CI integration test covering SCF, frontier orbitals, Mulliken charges, density cube, MEP cube, and HOMO/LUMO cubes. The successful validation run for commit `092d361` is recorded at <https://github.com/Chen-Ayu/ayu-scicompute/actions/runs/31927898525>. Native Windows installation on the development machine failed cleanly because no wheel/compiler toolchain was available; the preflight reports that limitation instead of claiming execution.

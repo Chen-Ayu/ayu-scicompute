@@ -22,4 +22,4 @@
 
 ## Current evidence
 
-The project has historical end-to-end ORCA and Materials Studio runs on the development machine. Public examples contain only synthetic or explicitly approved data. PySCF integration is configured for Linux CI and remains pending until the first private push; native Windows support depends on a suitable distribution or compiler toolchain. Gaussian and VASP are roadmap adapters and have no execution claim in this release.
+The project has historical end-to-end ORCA and Materials Studio runs on the development machine. Public examples contain only synthetic or explicitly approved data. The PySCF synthetic-water integration test has passed on GitHub-hosted Linux CI; native Windows support still depends on a suitable distribution or compiler toolchain. Gaussian and VASP are roadmap adapters and have no execution claim in this release.

@@ -2,8 +2,8 @@
 
 | Domain/task | Current adapter | Maturity | Future route |
 |---|---|---|---|
-| Molecular SP, HOMO/LUMO, density/MEP | PySCF; ORCA | implemented / validated | Gaussian |
-| Molecular optimization and frequency | PySCF; ORCA | implemented / validated | Gaussian |
+| Molecular SP, HOMO/LUMO, density/MEP | PySCF; ORCA | CI-validated / validated | Gaussian |
+| Molecular optimization and frequency | PySCF; ORCA | CI-validated / validated | Gaussian |
 | CHELPG workflow | ORCA | validated adapter workflow | Gaussian review |
 | Metal complex/finite metal cluster | ORCA or reviewed PySCF | engine chain exists; chemistry validation required | Gaussian |
 | Binding-energy cycle | controller + PySCF/ORCA stages | scaffolded multi-job protocol | Gaussian |

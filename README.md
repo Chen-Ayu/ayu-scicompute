@@ -3,6 +3,7 @@
 > Evidence-Gated Multi-Engine Agent for Molecular and Materials Simulation
 
 ![Release](https://img.shields.io/badge/release-0.3.0--rc1-blue)
+![Validation](https://github.com/Chen-Ayu/ayu-scicompute/actions/workflows/ci.yml/badge.svg)
 ![Agent Skills](https://img.shields.io/badge/agent%20skills-5-6f42c1)
 ![Current engines](https://img.shields.io/badge/current-PySCF%20%7C%20ORCA%20%7C%20Materials%20Studio-2b7489)
 ![Roadmap](https://img.shields.io/badge/roadmap-Gaussian%20%7C%20VASP-orange)
@@ -30,7 +31,7 @@ AyuSciCompute 的长期边界不是某一种材料或某一个软件，而是一
 |---|---|---|
 | ORCA | validated adapter | 已跑通 ORCA 6.1.1 实机 smoke job；正常终止、总能、HOMO/LUMO、能隙和偶极矩已由解析器提取 |
 | Materials Studio | validated adapter | 已跑通 MS 23.1 DMol3 实机 smoke job；完成标志和前线轨道结果已解析 |
-| PySCF | implemented adapter | 输入、SCF、优化、频率、轨道/密度/MEP cube 和 Linux CI 端到端测试已实现；首次远程 CI 待确认 |
+| PySCF | CI-validated adapter | 输入、SCF、优化、频率、轨道/密度/MEP cube 已实现；合成水分子端到端测试已在 GitHub Linux CI 通过 |
 | 凝胶/生物质 | implemented domain pack | 已形成化学检查、量化、结合、装箱、MD 和交付协议 |
 | Gaussian | planned adapter | 后续增加；当前版本不得声称执行 |
 | VASP | planned adapter | 后续增加金属、周期材料、表面、缺陷、吸附、能带/DOS 等工作流；当前版本不得声称执行 |

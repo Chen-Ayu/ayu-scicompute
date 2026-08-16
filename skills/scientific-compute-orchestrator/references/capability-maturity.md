@@ -6,7 +6,7 @@
 |---|---|---|
 | ORCA | validated adapter | real ORCA 6.1.1 smoke output parsed; task-specific chemistry still requires review |
 | Materials Studio | validated adapter | real MS 23.1 DMol3 smoke output parsed; proprietary engine remains user supplied |
-| PySCF | implemented adapter | runner, parsers and Linux CI test exist; first remote CI remains a release gate |
+| PySCF | CI-validated adapter | runner, parsers and synthetic-water Linux CI integration test passed on commit `092d361` |
 | Gel/biomass domain | implemented domain pack | detailed molecular/polymer/MD contracts; not a claim about every gel system |
 | Gaussian | planned | no runner in this release; do not claim execution |
 | VASP | planned | no runner in this release; do not claim execution or POTCAR access |
